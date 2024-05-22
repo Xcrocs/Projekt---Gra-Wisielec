@@ -5,7 +5,7 @@ export const GameContext = createContext();
 
 export const GameProvider = (props) => {
   const { children } = props;
-  const { changedManStatus, setChangedManStatus } = useState(0); /* number */
+  const { hangedManStatus, setHangedManStatus } = useState(0); /* number */
   const { randomWord, setRandomWord } = useState(); /* string */
   const { selectedLetters, setSelectedLetters } = useState(
     []
@@ -19,8 +19,8 @@ export const GameProvider = (props) => {
   return (
     <GameContext.Provider
       value={{
-        changedManStatus,
-        setChangedManStatus,
+        hangedManStatus,
+        setHangedManStatus,
         randomWord,
         setRandomWord,
         selectedLetters,
