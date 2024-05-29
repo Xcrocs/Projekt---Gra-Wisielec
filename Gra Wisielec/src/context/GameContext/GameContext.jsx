@@ -10,10 +10,14 @@ export const GameProvider = (props) => {
   const { selectedLetters, setSelectedLetters } = useState(
     []
   ); /* tablica stringów */
-  useEffect(() => {
+
+  const GenerateRandomWord = () => {
     const RandomIndex = Math.floor(Math.random() * 21);
     const ChosenWords = Words[RandomIndex];
     setRandomWord(ChosenWords);
+  };
+  useEffect(() => {
+    GenerateRandomWord();
   }, []);
 
   return (
@@ -25,6 +29,7 @@ export const GameProvider = (props) => {
         setRandomWord,
         selectedLetters,
         setSelectedLetters,
+        GenerateRandomWord,
       }}
     >
       {children}
