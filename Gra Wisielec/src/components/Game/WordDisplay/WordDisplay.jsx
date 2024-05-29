@@ -6,10 +6,10 @@ const WordDisplay = () => {
     useContext(GameContext);
 
   const array = randomWord
-    .split("")
+    ?.split("")
     .map((Letter) => (selectedLetters.includes(Letter) ? Letter : "_"));
 
-  const ShownWord = array.map((letter) => <h2>{letter}</h2>);
+  const ShownWord = array?.map((letter) => <h2>{letter}</h2>);
 
   return <div>{ShownWord}</div>;
 };

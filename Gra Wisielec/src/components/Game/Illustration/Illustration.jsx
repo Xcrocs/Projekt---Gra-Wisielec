@@ -5,7 +5,7 @@ import hangedImages from "../../../../Recources/ChangedManImages.json";
 const Illustration = () => {
   const { hangedManStatus, setHangedManStatus } = useContext(GameContext);
 
-  return <div>{hangedImages(hangedManStatus)}</div>;
+  return <div>{hangedImages[hangedManStatus]}</div>;
 };
 
 export default Illustration;

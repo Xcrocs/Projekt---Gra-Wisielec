@@ -23,7 +23,7 @@ const Keyboard = () => {
       {letters.map((letter) => (
         <button
           onClick={() => handleButtonClick(letter)}
-          disabled={selectedLetters.includes(letter)}
+          disabled={selectedLetters?.includes(letter)}
         >
           {letter}
         </button>

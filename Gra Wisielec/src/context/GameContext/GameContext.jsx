@@ -5,9 +5,9 @@ export const GameContext = createContext();
 
 export const GameProvider = (props) => {
   const { children } = props;
-  const { hangedManStatus, setHangedManStatus } = useState(0); /* number */
-  const { randomWord, setRandomWord } = useState(); /* string */
-  const { selectedLetters, setSelectedLetters } = useState(
+  const [hangedManStatus, setHangedManStatus] = useState(0); /* number */
+  const [randomWord, setRandomWord] = useState(undefined); /* string */
+  const [selectedLetters, setSelectedLetters] = useState(
     []
   ); /* tablica stringów */
 
