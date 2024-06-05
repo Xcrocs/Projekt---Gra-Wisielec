@@ -9,6 +9,7 @@ const Game = () => {
       <Illustration />
       <WordDisplay />
       <Keyboard />
+      <ResetButton />
     </div>
   );
 };

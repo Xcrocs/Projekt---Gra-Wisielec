@@ -4,7 +4,7 @@ import GameContext from "../../../context/GameContext/GameContext";
 const ResetButton = () => {
   const { GenerateRandomWord, setHangedManStatus, setSelectedLetters } =
     useContext(GameContext);
-  handleButtonClick = () => {
+  const handleButtonClick = () => {
     setHangedManStatus(0);
     setSelectedLetters([]);
     GenerateRandomWord();
