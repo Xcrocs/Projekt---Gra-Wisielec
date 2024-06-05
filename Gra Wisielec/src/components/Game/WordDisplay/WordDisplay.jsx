@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import GameContext from "../../../context/GameContext/GameContext";
+import "./WordDisplay.scss";
 
 const WordDisplay = () => {
   const { randomWord, setRandomWord, selectedLetters, setSelectedLetters } =
@@ -11,7 +12,7 @@ const WordDisplay = () => {
 
   const ShownWord = array?.map((letter) => <h2>{letter}</h2>);
 
-  return <div className="ShowWorldStyle">{ShownWord}</div>;
+  return <div className="WordDisplay">{ShownWord}</div>;
 };
 
 export default WordDisplay;

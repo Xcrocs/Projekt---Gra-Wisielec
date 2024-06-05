@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import GameContext from "../../../context/GameContext/GameContext";
 import letters from "../../../../Recources/Alphabet.json";
+import WordDisplay from "../WordDisplay/WordDisplay";
 
 const Keyboard = () => {
   const {
