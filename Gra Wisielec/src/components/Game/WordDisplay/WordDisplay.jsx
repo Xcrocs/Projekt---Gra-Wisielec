@@ -11,7 +11,7 @@ const WordDisplay = () => {
 
   const ShownWord = array?.map((letter) => <h2>{letter}</h2>);
 
-  return <div>{ShownWord}</div>;
+  return <div className="ShowWorldStyle">{ShownWord}</div>;
 };
 
 export default WordDisplay;
